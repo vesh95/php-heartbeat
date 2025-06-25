@@ -1,6 +1,5 @@
 <?php
 
-namespace vesh95\pulse;
 
 /**
  * Healthcheck runner interface

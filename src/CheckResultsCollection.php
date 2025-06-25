@@ -1,23 +1,22 @@
 <?php
 
-namespace vesh95\pulse;
 
 /**
  * Check results collection
  */
-class CheckResultsCollection implements \JsonSerializable, \IteratorAggregate, \Countable
+class CheckResultsCollection implements JsonSerializable, IteratorAggregate, Countable
 {
     /**
-     * @var \SplObjectStorage<CheckResult>
+     * @var SplObjectStorage<CheckResult>
      */
-    private \SplObjectStorage $results;
+    private SplObjectStorage $results;
 
     /**
      * CheckResultsCollection constructor.
      */
     public function __construct()
     {
-        $this->results = new \SplObjectStorage();
+        $this->results = new SplObjectStorage();
     }
 
     /**
@@ -62,7 +61,7 @@ class CheckResultsCollection implements \JsonSerializable, \IteratorAggregate, \
     /**
      * @inheritDoc
      */
-    public function getIterator(): \Generator
+    public function getIterator(): Generator
     {
         yield from $this->results;
     }
