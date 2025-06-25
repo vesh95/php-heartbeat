@@ -15,5 +15,16 @@
     "psr-4": {
       "Vesh95\\Pulse\\": "src/"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Vesh95\\Pulse\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^12.2"
+  },
+  "scripts": {
+    "test": "phpunit"
   }
 }
