@@ -1,30 +1,31 @@
 <?php
 
+namespace Vesh95\Pulse;
 
 /**
  * Check results collection
  */
-class CheckResultsCollection implements JsonSerializable, IteratorAggregate, Countable
+class ResultsCollection implements \JsonSerializable, \IteratorAggregate, \Countable
 {
     /**
-     * @var SplObjectStorage<CheckResult>
+     * @var \SplObjectStorage<Result>
      */
-    private SplObjectStorage $results;
+    private \SplObjectStorage $results;
 
     /**
      * CheckResultsCollection constructor.
      */
     public function __construct()
     {
-        $this->results = new SplObjectStorage();
+        $this->results = new \SplObjectStorage();
     }
 
     /**
      * Append a check result to the collection
-     * @param CheckResult $result
+     * @param Result $result
      * @return void
      */
-    public function add(CheckResult $result): void
+    public function add(Result $result): void
     {
         $this->results->attach($result);
     }
@@ -61,7 +62,7 @@ class CheckResultsCollection implements JsonSerializable, IteratorAggregate, Cou
     /**
      * @inheritDoc
      */
-    public function getIterator(): Generator
+    public function getIterator(): \Generator
     {
         yield from $this->results;
     }

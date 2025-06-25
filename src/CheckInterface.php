@@ -1,5 +1,6 @@
 <?php
 
+namespace Vesh95\Pulse;
 
 /**
  * Check interface
@@ -7,7 +8,7 @@
 interface CheckInterface
 {
     /**
-     * @return CheckResult
+     * @return Result
      */
-    public function check(): CheckResult;
+    public function check(): Result;
 }

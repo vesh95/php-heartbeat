@@ -1,10 +1,11 @@
 <?php
 
+namespace Vesh95\Pulse;
 
 /**
  * Check result data
  */
-readonly class CheckResult
+readonly class Result
 {
     public function __construct(
         public string $name,

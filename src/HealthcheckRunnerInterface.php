@@ -1,5 +1,6 @@
 <?php
 
+namespace Vesh95\Pulse;
 
 /**
  * Healthcheck runner interface
@@ -16,7 +17,7 @@ interface HealthcheckRunnerInterface
     public function append(CheckInterface $check): HealthcheckRunnerInterface;
 
     /**
-     * @return CheckResultsCollection
+     * @return ResultsCollection
      */
-    public function run(): CheckResultsCollection;
+    public function run(): ResultsCollection;
 }

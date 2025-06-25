@@ -1,16 +1,17 @@
 <?php
 
+namespace Vesh95\Pulse;
 
-class HealthcheckRunner implements HealthcheckRunnerInterface
+class DefaultHealthcheckRunner implements HealthcheckRunnerInterface
 {
     /**
-     * @var SplObjectStorage<CheckInterface>
+     * @var \SplObjectStorage<CheckInterface>
      */
-    private SplObjectStorage $checks;
+    private \SplObjectStorage $checks;
 
     public function __construct()
     {
-        $this->checks = new SplObjectStorage();
+        $this->checks = new \SplObjectStorage();
     }
 
     /**
@@ -26,9 +27,9 @@ class HealthcheckRunner implements HealthcheckRunnerInterface
     /**
      * @inheritDoc
      */
-    public function run(): CheckResultsCollection
+    public function run(): ResultsCollection
     {
-        $result = new CheckResultsCollection();
+        $result = new ResultsCollection();
         foreach ($this->checks as $check) {
             $result->add($check->check());
         }
