@@ -18,8 +18,8 @@ To use Php-pulse, create a new instance of the `HealthcheckRunner` class and add
 calling the `run()` method.
 
 ```php
-use PhpPulse\Healthcheck\HealthcheckRunner;
-use PhpPulse\Check\CheckInterface;
+use Vesh95\Heartbeat\HealthcheckRunner;
+use Vesh95\Heartbeat\Check\CheckInterface;
 
 $runner = new HealthcheckRunner();
 $runner->append(new CheckInterface());
