@@ -1,6 +1,6 @@
 <?php
 
-namespace Vesh95\Pulse;
+namespace Vesh95\Heartbeat;
 
 /**
  * Check result data

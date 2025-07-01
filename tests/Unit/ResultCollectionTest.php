@@ -1,8 +1,8 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Vesh95\Pulse\Result;
-use Vesh95\Pulse\ResultsCollection;
+use Vesh95\Heartbeat\Result;
+use Vesh95\Heartbeat\ResultsCollection;
 
 class ResultCollectionTest extends TestCase
 {

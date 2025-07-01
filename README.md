@@ -9,7 +9,7 @@ Php-pulse is a library for PHP that provides a set of interfaces for healthcheck
 To install Php-pulse, run the following command:
 
 ```
-composer require php-pulse/php-pulse
+composer require vesh95/heartbeat
 ```
 
 ## Usage

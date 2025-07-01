@@ -1,10 +1,10 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Vesh95\Pulse\CheckInterface;
-use Vesh95\Pulse\DefaultHealthcheckRunner;
-use Vesh95\Pulse\HealthcheckRunnerInterface;
-use Vesh95\Pulse\Result;
+use Vesh95\Heartbeat\CheckInterface;
+use Vesh95\Heartbeat\DefaultHealthcheckRunner;
+use Vesh95\Heartbeat\HealthcheckRunnerInterface;
+use Vesh95\Heartbeat\Result;
 
 class HealthcheckRunnerTest extends TestCase
 {

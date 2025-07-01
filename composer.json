@@ -1,5 +1,5 @@
 {
-  "name": "vesh95/pulse",
+  "name": "vesh95/heartbeat",
   "description": "Healthcheck and monitoring interfaces for PHP applications",
   "homepage": "https://github.com/vesh95/php-pulse",
   "authors": [
@@ -15,12 +15,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Vesh95\\Pulse\\": "src/"
+      "Vesh95\\Heartbeat\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Vesh95\\Pulse\\Tests\\": "tests/"
+      "Vesh95\\Heartbeat\\Tests\\": "tests/"
     }
   },
   "require-dev": {
