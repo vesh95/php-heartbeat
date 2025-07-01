@@ -41,7 +41,7 @@ jobs:
         run: composer install --prefer-dist
 
       - name: Save dependencies for tests
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: dependencies
           path: vendor
@@ -58,7 +58,7 @@ jobs:
           php-version: '8.0'
 
       - name: Download dependencies
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: dependencies
 
