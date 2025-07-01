@@ -2,8 +2,7 @@
 
 Php-pulse is a library for PHP that provides a set of interfaces for healthcheck and monitoring.
 
-[![PHP Composer](https://github.com/vesh95/php-pulse/actions/workflows/test.yml/badge.svg)](https://github.com/vesh95/php-pulse/actions/workflows/test.yml)
-
+[![PHP Composer](https://github.com/vesh95/php-heartbeat/actions/workflows/check.yml/badge.svg)](https://github.com/vesh95/php-heartbeat/actions/workflows/check.yml)
 ## Installation
 
 To install Php-pulse, run the following command:
